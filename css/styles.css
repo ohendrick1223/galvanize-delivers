@@ -58,7 +58,16 @@ footer.page-footer {
 
 
 /*==================My styles================================*/
+/*.main_container {
+  display:inline-block;
+}*/
 
 .item {
-  display:inline-block;
+  
+
+
 }
+
+/*.menu .order_container {
+  display: inline-block;
+}*/
