@@ -8,12 +8,12 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <title>galvanize delivers ordering page</title>
 </head>
 
 <body>
-    <nav class="#1565c0 blue darken-3" role="navigation">
+    <nav class="blue darken-3" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
             <ul class="right hide-on-med-and-down">
@@ -29,56 +29,183 @@
 
     <!-- ================================================================== -->
 
-    <div class="main container">
-        <div class="menu">
-          <h3> Menu </h3>
-            <div class="item">
-                <div class="picture"><img src="burger.jpg"></div>
-                <div class="info"><p>Royale with Cheese</p></div>
-                <div class="orderbtn"><btn class="btn">Order</btn></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s7">
+                <h3> Menu </h3>
+
+                <div class="row">
+                    <div class="col s6 item">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="burger.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>Royale with Cheese</p>
+                                <p>$8.99</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#"><span class="pink-text text-lighten-1">Add to Order</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6 item">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="pizza.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>Arugula Pie</p>
+                                <p>$11.99</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#"><span class="pink-text text-lighten-1">Add to Order</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s6 item">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="ribs.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>Smoked Swine</p>
+                                <p>$14.99</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#"><span class="pink-text text-lighten-1">Add to Order</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6 item">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="ice_cream.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p>Ice Cream Biscuits</p>
+                                <p>$7.99</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#"><span class="pink-text text-lighten-1">Add to Order</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <div class="picture"><img src="pizza.jpg"></div>
-                <div class="info"><p>Arugula Pie</p></div>
-                <div class="orderbtn"><btn class="btn">Order</btn></div>
-            </div>
-            <div class="item">
-                <div class="picture"><img src="ribs.jpg"></div>
-                <div class="info"><p>Smoked Swine</p></div>
-                <div class="orderbtn"><btn class="btn">Order</btn></div>
-            </div>
-            <div class="item">
-                <div class="picture"><img src="ice_cream.jpg"></div>
-                <div class="info"><p>Ice Cream Biscuit</p></div>
-                <div class="orderbtn"><btn class="btn">Order</btn></div>
+
+            <!-- =====================Table data====================================== -->
+
+            <div class="col s5">
+                <h3>Order</h3>
+                <div class="row">
+                    <div class="table_container">
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th data-field="name">Item</th>
+                                    <th data-field="sums"></th>
+                                    <th data-field="price">Price</th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Royale with Cheese</td>
+                                    <td></td>
+                                    <td>$8.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Arugula Pie</td>
+                                    <td></td>
+                                    <td>$11.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Smoked Swine</td>
+                                    <td></td>
+                                    <td>$14.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Ice Cream Biscuit</td>
+                                    <td></td>
+                                    <td>$7.99</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Subtotal</td>
+                                    <td>$43.96</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Tax</td>
+                                    <td>$4.40</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>$48.36</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form container">
+
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Name</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Phone number</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">business</i>
+                                    <input id="icon_businesse" type="text" class="validate">
+                                    <label for="icon_business">Address</label>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="button container">
+                    <btn></btn>
+                </div>
+
             </div>
         </div>
-
-        <div class="order container">
-            <div class="table container">
-                <!-- TABLE!!!!!!!! -->
-            </div>
-
-            <div class="form container">
-                <form>
-                    <!-- FORM WITH INPUTS!!!!!!!! -->
-                </form>
-            </div>
-
-            <div class="button container">
-                <btn></btn>
-            </div>
-
-        </div>
-
     </div>
 
-
-
-
-
-
-
+<!-- ===========================footer==================================== -->
 
 
     <footer class="page-footer #1565c0 blue darken-3">
